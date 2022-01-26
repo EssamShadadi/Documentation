@@ -3,8 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Step 1</title>
+    <script>
+     
+      function changeImage(){
+        let image = document.querySelector("img");
+        
+        if (image.src=="file:///home/essam/Desktop/Documentation-master/03_Exercises/03_JavaScript/javascript-basics-02/step%201/images/image1_2.jpg")
+        image.src="images/image1.jpg";
+        else 
+        image.src="images/image1_2.jpg";
+
+      }
+    </script>
   </head>
   <body>
-      <img src="images/image1.jpg" id="image1" />
+      <img src="images/image1.jpg" id="image1" onmouseover="changeImage()"/>
   </body>
 </html>
