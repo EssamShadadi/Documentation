@@ -3,10 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Step 2</title>
+  
 </head>
 <body>
   <form>
-    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name" />
   </form>
+  <script>
+    inp = document.querySelector("input").onblur=function() {myFunction()};
+    function myFunction(){
+       alert("thank you for participating!");
+    }
+  </script>
 </body>
 </html>
