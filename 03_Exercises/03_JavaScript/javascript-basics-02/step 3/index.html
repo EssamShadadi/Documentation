@@ -8,5 +8,19 @@
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
   </form>
+<div id = "displayed-div"></div>
+<script>
+  inp = document.querySelector("input");
+  console.log("input value" +inp.value)
+  disDiv = document.querySelector("div");
+  console.log("div value" +disDiv.value)
+
+  inp.onblur = function (){
+  console.log("on blur function")
+  console.log("input value" +inp.value)
+
+    disDiv.innerHTML = inp.value;
+  }
+</script>
 </body>
 </html>
