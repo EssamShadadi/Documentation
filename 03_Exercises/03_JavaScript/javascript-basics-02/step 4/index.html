@@ -3,13 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>Step 4</title>
+
 </head>
 <body>
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="Doe" id="name" />
     <label for="surname">Your surname  : </label><input type="text" name="surname" value="John" id="surname" />
     <label for="city">Your city  : </label><input type="text" name="city" value="New York" id="city" />
-    <button type="button" name="button">Reset</button>
+    <button type="button" name="button" onclick="myFunction()">Reset</button>
   </form>
+    <script>
+    function myFunction() {
+      if(confirm("Do you want to clear all fields?")){
+        console.log("connfirmed!!");
+        let arr = document.querySelectorAll("input");
+        for (let i =0; i< arr.length;i++){
+          arr[i].value=""
+        }
+      }
+      else{
+        console.log("Nnot confirmed!!")
+      }
+      
+}
+  </script>
 </body>
 </html>
