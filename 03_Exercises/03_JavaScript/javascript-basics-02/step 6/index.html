@@ -10,5 +10,21 @@
       <img src="images/image3.jpg" id="image3" />
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
+      <script>
+      
+        let imgArr = ["images/image1_2.jpg","images/image2_2.jpg","images/image3_2.jpg","images/image4_2.jpg","images/image5_2.jpg"];
+        let objectArr = document.querySelectorAll("img");
+        let originalImg = [];
+        console.log(objectArr)
+        for (let i = 0 ; i<objectArr.length;i++){
+          originalImg.push(objectArr[i].src)
+          objectArr[i].onmouseover= function(){
+            objectArr[i].src=imgArr[i];}
+            objectArr[i].onmouseout = function(){
+              objectArr[i].src=originalImg[i];
+            }
+        }
+      
+    </script>
   </body>
 </html>
