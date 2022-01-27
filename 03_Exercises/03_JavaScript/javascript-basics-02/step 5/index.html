@@ -12,5 +12,16 @@
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
     </div>
+    <script>
+      
+        let imgArr = ["images/image1_2.jpg","images/image2_2.jpg","images/image3_2.jpg","images/image4_2.jpg","images/image5_2.jpg"];
+        let objectArr = document.querySelectorAll("img");
+        console.log(objectArr)
+        for (let i = 0 ; i<objectArr.length;i++){
+          objectArr[i].onmouseover= function(){
+            objectArr[i].src=imgArr[i];}
+        }
+      
+    </script>
   </body>
 </html>
