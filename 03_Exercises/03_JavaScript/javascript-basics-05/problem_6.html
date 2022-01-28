@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <button id= "m12" onclick="showM()">click yo show multiplication table for 12 </button>
+    <br><br>
+    <div></div>
+    <script>
+        function showM(){
+            let text ="";
+            for (let i = 1; i<13; i++){
+                for (let j =1 ; j <13 ; j++){
+                    text = text +" "+ i*j
+                }
+                text = text + "<br>"
+            }
+            document.querySelector("div").innerHTML=text;
+        }
+    </script>
 </body>
 </html>
