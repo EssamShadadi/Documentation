@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id= "m12" onclick="showPrime()">click to show prime numbers from 2 to 30  </button>
+    <br><br>
+    <div></div>
+    <script>
+        function showPrime(){
+            let text ="";
+            for (let i = 2; i<31; i++){ 
+                if (isPrime(i)){
+                    text = text + i +" "
+                }               
+            }
+            document.querySelector("div").innerHTML=text;
+        }
+        function isPrime(num) {
+            let sqrtnum=Math.floor(Math.sqrt(num));
+                let prime = num != 1;
+                for(let i=2; i<sqrtnum+1; i++) { // sqrtnum+1
+                    if(num % i == 0) {
+                        prime = false;
+                        break;
+        }
+    }
+    return prime;
+}
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
